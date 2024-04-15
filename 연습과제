@@ -1,0 +1,48 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "authorship_tag": "ABX9TyMZPZKGyXeMMVqFRV8ola7p",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/yesavailable/NLP_2024/blob/main/%EC%97%B0%EC%8A%B5%EA%B3%BC%EC%A0%9C\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": null,
+      "metadata": {
+        "id": "A7N5k2SZ-Xam"
+      },
+      "outputs": [],
+      "source": [
+        "import re\n",
+        "\n",
+        "e=\"some,someone,somewhere,something\"\n",
+        "pattern=r\"some?\"\n",
+        "matches=re.findall(pattern,e)\n",
+        "\n",
+        "for i in matches:\n",
+        "  print(\"Match:\",i)"
+      ]
+    }
+  ]
+}
